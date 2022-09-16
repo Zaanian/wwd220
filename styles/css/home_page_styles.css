@@ -1,4 +1,6 @@
 
-header {
-    grid-template-rows: 150px / auto;
+body {
+    display: grid;
+    grid-template-rows: auto;
+    justify-items: center;
 }
