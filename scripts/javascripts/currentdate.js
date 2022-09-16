@@ -27,5 +27,5 @@ const d = new Date();
 const dayName = daynames[d.getDay()];
 const monthName = monthnames[d.getMonth()];
 const year = d.getFullYear();
-const fullfooter = `${year} - Stephen Stauffer |${dayName}, ${d.getDate()}, ${monthName}, ${year} | WA`;
+const fullfooter = `${year} - Stephen Stauffer | ${dayName}, ${d.getDate()}, ${monthName}, ${year} | WA`;
 document.querySelector("#date").textContent = fullfooter;
