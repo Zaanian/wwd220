@@ -1,6 +1,29 @@
 
-body {
-    display: grid;
-    grid-template-rows: auto;
-    justify-items: center;
+
+header {
+    display: flex;
+    justify-content: center;
+    background-color: cornflowerblue;
+    font-size: 21px;
+}
+
+img {
+    border-style: ridge;
+}
+
+main {
+    margin: 8px;
+    font-size: 20px;
+    
+}
+
+h2 {
+    padding-left: 25px;
+    border-style: groove;
+}
+
+footer {
+    text-align: center;
+    background-color: cornflowerblue;
+    font-size: 19px;
 }
