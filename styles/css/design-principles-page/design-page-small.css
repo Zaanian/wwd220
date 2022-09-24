@@ -1,10 +1,20 @@
 
 
+nav {
+    margin: 10px;
+    padding: 5px;
+}
+
 header {
+    display: flex;
+    align-items: center;
     background-color: cornflowerblue;
     font-size: 21px;
 }
 
+img {
+    border-style: groove;
+}
 
 
 footer {
@@ -14,10 +24,21 @@ footer {
     font-size: 19px;
 }
 
+h2 {
+    background-color: cornflowerblue;
+    border: 10px;
+}
+
 main {
     
     display: grid;
     grid-template-columns: 1fr;
     font-size: 20px
     
+}
+
+section {
+    margin: 10px;
+    padding: 5px;
+
 }
