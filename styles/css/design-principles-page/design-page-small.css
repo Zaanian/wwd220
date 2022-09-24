@@ -1,0 +1,23 @@
+
+
+header {
+    background-color: cornflowerblue;
+    font-size: 21px;
+}
+
+
+
+footer {
+    margin-top: 50px;
+    text-align: center;
+    background-color: cornflowerblue;
+    font-size: 19px;
+}
+
+main {
+    
+    display: grid;
+    grid-template-columns: 1fr;
+    font-size: 20px
+    
+}
