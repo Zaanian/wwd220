@@ -1,7 +1,30 @@
 
+
+
+h2 {
+    background-color: #75DCF3;
+    margin: 20px;
+    padding: 20px;
+    border-style: solid;
+    border-color: #D1F0E9;
+}
+
+header {
+    display: grid;
+    background-color: #75DCF3
+}
+
 body {
     font-size: 20px;
 
+}
+
+nav {
+    margin: 5px;
+}
+
+p {
+    margin: 20px;
 }
 
 h1 {
@@ -14,6 +37,10 @@ ul {
 }
 li {
     margin: 10px;
+}
+
+footer {
+    margin: 5px;
 }
 
 @media only screen and (min-width: 37.5em) {
@@ -29,5 +56,7 @@ li {
 @media only screen and (min-width: 60em) {
     ul {
         background-color: aqua;
+        border-style: solid;
+        border-color: #9EDDEB;
     }
 }
