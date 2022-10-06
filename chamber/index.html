@@ -6,18 +6,34 @@
     <title>Community of Yelm</title>
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
     
   </head>
   <body>
     <header>
-      
+      <img src="images/Logo.png" alt="Logo">
+      <h1> Community of Yelm</h1>
+
     </header>
+    
     <nav>
+      <button>&#9776;</button>
+      <ul>
+        <li><a href="#">Home</a> </li>
+        <li><a href="#">Directory</a> </li>
+        <li><a href="#">Contact</a> </li>
+        <li><a href="#">Join</a> </li>
+      </ul>
       
     </nav>
     <main>
-      
+      <h2>Content</h2>
+
     </main>
-    <footer>&copy;<span>2022 | Stephen Stauffer</span></footer>
+    <footer>&copy;<span id="date"></span>
+      <span id="lastmodified"></span></span></footer>
+    <script src="js/currentdate.js"></script>
+    <script src="js/lastmodified.js"></script>
   </body>
 </html>
