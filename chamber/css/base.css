@@ -44,7 +44,7 @@ nav ul li a {
     display: block;
     padding: .8rem 2vw;
     text-decoration: none;
-    border-top: 1px solid rgba(0,0,0,0.2);
+    border-top: 2px solid rgba(204, 236, 234, 0.767);
 }
 
 nav ul li a:hover {
@@ -57,11 +57,30 @@ main {
     margin: 8px;
 }
 
+h2 {
+    margin: 8px;
+
+}
+
 
 
 
 /*----FOOTER------*/
 Footer {
     margin: 8px;
+    background-color: #75DCF3;
+    border: #D1F0E9 solid;
+}
+footer ul {
+    display: flex;
+    list-style-type: none;
 }
 
+footer ul li {
+    margin-right: 1rem;
+
+}
+footer div {
+    margin: 8px;
+    
+}
