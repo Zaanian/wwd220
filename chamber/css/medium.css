@@ -2,7 +2,7 @@
 @media only screen and (min-width: 32.5em) {
     nav button {display: none;}
     
-    nav ul {
+    nav ul#primary {
         display: flex;
         
     }

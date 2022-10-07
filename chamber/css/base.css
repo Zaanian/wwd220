@@ -36,6 +36,11 @@ nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
+    display: none;
+}
+
+nav ul.open {
+    display: block;
 }
 
 
@@ -70,17 +75,26 @@ Footer {
     margin: 8px;
     background-color: #75DCF3;
     border: #D1F0E9 solid;
+    text-align: center;
+    
 }
+
+
+
 footer ul {
+    list-style: none;
     display: flex;
-    list-style-type: none;
+    border-bottom: 2px solid rgba(204, 236, 234, 0.767)
 }
 
 footer ul li {
     margin-right: 1rem;
+    padding: 5px;
+}
 
-}
-footer div {
+footer span {
     margin: 8px;
-    
 }
+
+
+
