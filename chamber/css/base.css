@@ -4,6 +4,7 @@
 
 body {
     font-size: 20px;
+    font-family: 'Roboto Mono', monospace;
 
 }
 
@@ -80,18 +81,21 @@ Footer {
 }
 
 footer img {
+    display: flex;
     margin-left: 5rem; 
 }
 
 footer ul {
     list-style: none;
     display: flex;
-    border-bottom: 2px solid rgba(204, 236, 234, 0.767)
+    border-bottom: 2px solid rgba(204, 236, 234, 0.767);
+    border-top: 2px solid rgba(204, 236, 234, 0.767);
 }
 
 footer ul li {
     margin-right: 1rem;
     padding: 5px;
+    border-left: 2px solid rgba(204, 236, 234, 0.767)
 }
 
 footer span {
