@@ -79,7 +79,9 @@ Footer {
     
 }
 
-
+footer img {
+    margin-left: 5rem; 
+}
 
 footer ul {
     list-style: none;
