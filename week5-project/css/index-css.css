@@ -1,0 +1,9 @@
+
+body {
+    font-size: 20px;
+}
+
+ul li {
+    margin: 1rem;
+    list-style: none;
+}
