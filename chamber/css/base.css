@@ -61,6 +61,19 @@ nav ul li a:hover {
 
 main {
     margin: 8px;
+    justify-items: center;
+    background-color: bisque;
+    border: #e1c0564d groove;
+}
+main section {
+    display: grid;
+}
+
+main section div {
+    padding: 1em;
+    border-bottom: #d4af5f solid;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
 h2 {
