@@ -22,6 +22,10 @@ h1 {
    
 }
 
+header #message {
+    margin: 8px;
+}
+
 /*----NAVIGATION------*/
 nav {
     background-color: #75DCF3;

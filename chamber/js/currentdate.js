@@ -32,4 +32,4 @@ document.querySelector("#date").textContent = fullfooter;
 
 // message
 let message = "Come join us for the chamber meet and greet Wednesday at 7:00 p.m.";
-document.querySelector("#date-something").textContent = message;
+document.querySelector("#message").textContent = message;
