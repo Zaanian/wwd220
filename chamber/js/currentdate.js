@@ -31,5 +31,13 @@ const fullfooter = `${year} - Stephen Stauffer | ${dayName}, ${d.getDate()}, ${m
 document.querySelector("#date").textContent = fullfooter;
 
 // message
-let message = "Come join us for the chamber meet and greet Wednesday at 7:00 p.m.";
-document.querySelector("#message").textContent = message;
+const message = "";
+
+if ((dayName = 1 || 2)) {
+  let message =
+    "Come join us for the chamber meet and greet Wednesday at 7:00 p.m.";
+  document.querySelector("#message").textContent = message;
+} else {
+  let message = "Happy Day";
+  document.querySelector("#message").textContent = message;
+}
