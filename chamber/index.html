@@ -15,7 +15,7 @@
   </head>
   <body>
     <header>
-      <img src="images/Logo.png" alt="Logo" />
+      <img class="logo" src="images/Logo.png" alt="Logo" />
       <h1>Community of Yelm</h1>
       <span id="message"></span>
     </header>
@@ -33,7 +33,18 @@
       <section>
         <h2>Welcome</h2>
         <div>
-          <span id="para">Welcome to the Community of Yelm!</span>
+          <img
+            class="photo"
+            src="images/wdd230-org1.jpg"
+            alt="happy meeting"
+            sizes="60vw"
+            srcset="
+              images/wdd230-org-small2.jpg  200w,
+              images/wdd230-org-medium2.jpg 500w,
+              images/wdd230-org-large2.jpg  800w
+            "
+          />
+          <p>Welcome to the Community of Yelm!</p>
         </div>
         <h2>Events</h2>
         <div>
@@ -45,12 +56,14 @@
         </div>
         <h2>Weather</h2>
         <div>
-          <p>weather report</p>
+          <p id="airtemp">Air temperature: 40</p>
+          <p id="windMile">Wind Speed MPH: 20</p>
+          <span id="windchill">chill</span>
         </div>
       </section>
     </main>
     <footer>
-      <img src="images/Logo.png" alt="Logo" />
+      <img class="logo" src="images/Logo.png" alt="Logo" />
       <ul>
         <li>200 Ave E WA, 98559</li>
         <li>communeofyelm.com +(289) 328-4712</li>
@@ -64,9 +77,9 @@
       <span>&copy;<span id="date"></span></span>
       <span id="lastmodified"></span>
     </footer>
+    <script src="js/windchill.js"></script>
     <script src="js/hamburger.js"></script>
     <script src="js/currentdate.js"></script>
     <script src="js/lastmodified.js"></script>
-    <script src="js/announcment.js"></script>
   </body>
 </html>

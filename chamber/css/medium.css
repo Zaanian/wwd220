@@ -13,6 +13,8 @@
         border-right: 2px solid rgba(204, 236, 234, 0.767);
 
     }
-
+    section {
+        justify-content: center;
+    }
 
 }
