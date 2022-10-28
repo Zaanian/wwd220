@@ -4,6 +4,48 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width-device-width, inital-scale=1.0" />
     <title>Lazy Load</title>
-    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css"/>
+    <script src="java/lazyload.js" defer></script>
   </head>
+  <body>
+    <header>
+      <h1>Progressive loading of Images</h1>
+    </header>
+    <picture>
+      <img
+        src="images/placeholder.png"
+        data-src="images/apple3.jpg"
+        alt="placeholder"
+      />
+    </picture>
+    <picture>
+      <img src="images/placeholder.png" data-src="images/car2.jpg" alt="placeholder" />
+    </picture>
+    <picture>
+      <img
+        src="images/placeholder.png"
+        data-src="images/forest2.jpg"
+        alt="placeholder"
+      />
+    </picture>
+    <picture>
+      <img
+        src="images/placeholder.png"
+        data-src="images/mountainriver.jpg"
+        alt="placeholder"
+      />
+    </picture>
+    <picture>
+      <img
+        src="images/placeholder.png"
+        data-src="images/tiger2.jpg"
+        alt="placeholder"
+      />
+    </picture>
+    <picture>
+      <img src="images/placeholder.png" data-src="images/wolf.jpg" alt="placeholder" />
+    </picture>
+  </body>
+  
 </html>
