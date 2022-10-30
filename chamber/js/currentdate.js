@@ -46,3 +46,5 @@ if (newDay === "Monday") {
   let message = "Happy Day";
   document.querySelector("#message").textContent = message;
 }
+
+//
