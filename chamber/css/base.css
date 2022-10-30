@@ -61,6 +61,11 @@ main {
   background-color: bisque;
   border: #e1c0564d groove;
 }
+
+main.discover {
+    display: grid;
+}
+
 main section {
   display: grid;
 }
@@ -73,6 +78,7 @@ main section div {
 }
 
 main picture img.gallery {
+    
     width: 80%;
 
 }
@@ -85,24 +91,24 @@ h2 {
   margin: 8px;
 }
 
+.gallery:hover {
+    margin-left: none;
+    opacity: 1;
+
+}
+
 .gallery {
-  margin: 8px;
+  margin: 10px;
   border-style: solid;
   border-color: #e1cd94;
+  ;
+  
 }
 
 p {
     margin: 5px;
 }
 
-picture img[data-src] {
-  filter: blur(0.2em);
-}
-
-picture img {
-  filter: blur(0em);
-  transition: filter 0.5s;
-}
 
 /*----FOOTER------*/
 Footer {

@@ -17,4 +17,10 @@
         justify-content: center;
     }
 
+    .gallery:hover {
+        margin-left: 15px;
+        opacity: 0.8;
+    
+    }
+
 }
