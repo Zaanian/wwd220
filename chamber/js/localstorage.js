@@ -17,4 +17,4 @@ numVisits++;
 
 localStorage.setItem("visits-ls", numVisits);
 
-todayDisplay.textContent = Date.now();
+
