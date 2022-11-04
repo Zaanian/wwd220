@@ -62,10 +62,6 @@ main {
   border: #e1c0564d groove;
 }
 
-main.discover {
-    display: grid;
-}
-
 main section {
   display: grid;
 }
@@ -77,11 +73,6 @@ main section div {
   margin-bottom: 1em;
 }
 
-main picture img.gallery {
-    
-    width: 80%;
-
-}
 .photo {
   border-style: solid;
   border-color: #e1cd94;
@@ -91,24 +82,28 @@ h2 {
   margin: 8px;
 }
 
-.gallery:hover {
-    margin-left: none;
-    opacity: 1;
+p {
+  margin: 5px;
+}
 
+/*Discover page */
+main.discover {
+  display: grid;
+}
+
+main picture img.gallery {
+  width: 80%;
+}
+.gallery:hover {
+  margin-left: none;
+  opacity: 1;
 }
 
 .gallery {
   margin: 10px;
   border-style: solid;
   border-color: #e1cd94;
-  ;
-  
 }
-
-p {
-    margin: 5px;
-}
-
 
 /*----FOOTER------*/
 Footer {
