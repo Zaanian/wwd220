@@ -1,73 +1,126 @@
 <!DOCTYPE html>
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width-device-width, inital-scale=1.0" />
-  <title>Join</title>
-  <link rel="stylesheet" href="css/normalize.css" />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Roboto+Mono&display=swap"
-    rel="stylesheet"
-  />
-  <link rel="stylesheet" href="css/base.css" />
-  <link rel="stylesheet" href="css/medium.css" />
-  <link rel="stylesheet" href="css/large.css" />
-</head>
-<body>
-  <header>
-    <img class="logo" src="images/Logo.png" alt="Logo" />
-    <h1>Community of Yelm</h1>
-    <span id="message"></span>
-  </header>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" >
+    <meta name="viewport" content="width-device-width, inital-scale=1.0" >
+    <title>Join</title>
+    <link rel="stylesheet" href="css/normalize.css" >
+    <link
+      href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Roboto+Mono&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="css/base.css" >
+    <link rel="stylesheet" href="css/medium.css" >
+    <link rel="stylesheet" href="css/large.css" >
+  </head>
+  <body>
+    <header>
+      <img class="logo" src="images/Logo.png" alt="Logo" >
+      <h1>Community of Yelm</h1>
+      <span id="message"></span>
+    </header>
 
-  <nav>
-    <button id="HamburgerBtn">&#9776;</button>
-    <ul id="primary">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="discoverpage.html">Discover</a></li>
-      <li><a href="#">Contact</a></li>
-      <li><a href="join.html">Join</a></li>
-    </ul>
-  </nav>
-  <main>
-    <h1>Join</h1>
-    <form method="get" action="thankyou.html">
-      <fieldset>
-        <legend>New Member Information</legend>
-        <label>First Name*<input type="text" name="fname" required /></label>
-        <label>Last Name*<input type="text" name="lname" required /></label>
-        <label
-          >Email*<input
-            type="email"
-            name="email"
-            required
-            placeholder="business@gmail.com"
-        /></label>
-        <label
-          >Cell Phone Number*<input type="tel" name="cellphone" required
-        /></label>
-        <label>Business Name*<input type="text" name="bname" required /></label>
-        <label>Job Title<input type="text" name="jobtitle"  pattern="[A-Za-z0-9 ]{7,}"/></label>
-      </fieldset>
-      <fieldset>
-        <legend>Membership level</legend>
-        <div>Membership</div>
-        <label
-          ><input
-            type="radio"
-            name="level"
-            value="Non-profit"
-          />Non-profit</label
-        >
-        <label><input type="radio" name="level" value="Bronze" />Bronze</label>
-        <label><input type="radio" name="level" value="Silver" />Silver</label>
-        <label><input type="radio" name="level" value="Gold" />Gold</label>
-      </fieldset>
-      <fieldset>
-        <legend>Business Description</legend>
-        <label><textarea name="description"></textarea></label>
-      </fieldset>
-      <input type="submit" value="Register" />
-      <span hidden>52</span>
-    </form>
-  </main>
-</body>
+    <nav>
+      <button id="HamburgerBtn">&#9776;</button>
+      <ul id="primary">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="discoverpage.html">Discover</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="join.html">Join</a></li>
+      </ul>
+    </nav>
+    <main>
+      <h1>Join</h1>
+      <form method="get" action="thankyou.html">
+        <fieldset>
+          <legend>New Member Information</legend>
+          <label class="top"
+            >First Name*<input type="text" name="fname" required
+          ></label>
+          <label class="top"
+            >Last Name*<input type="text" name="lname" required
+          ></label>
+          <label class="top"
+            >Email*<input
+              type="email"
+              name="email"
+              required
+              placeholder="business@gmail.com"
+          ></label>
+          <label class="top"
+            >Cell Phone Number*<input
+              type="tel"
+              name="cellphone"
+              placeholder="1235551234"
+              required
+          ></label>
+          <label class="top"
+            >Business Name*<input type="text" name="bname" required
+          ></label>
+          <label class="top"
+            >Job Title<input
+              type="text"
+              name="jobtitle"
+              pattern="[A-Za-z0-9 ]{7,}"
+          ></label>
+        </fieldset>
+        <fieldset>
+          <legend>Membership level</legend>
+          <div>Select Membership level</div>
+          <label class="selectLevel"
+            ><input type="radio" name="level" value="Non-profit" required
+            >Non-profit</label
+            >
+          <div>
+            free non-profit organizations, 1 free training per year and 10%
+            discount on events
+          </div>
+          <label class="selectLevel"
+            ><input type="radio" name="level" value="Bronze" >Bronze</label
+          >
+          <div>
+            ($400/year) 2 trainings per year, 20% discount on events, 1
+            consultancy per semester
+          </div>
+          <label class="selectLevel"
+            ><input type="radio" name="level" value="Silver" >Silver</label
+          >
+          <div>
+            ( $900/year) Previous benefits, 2 consultations per semester and
+            participation in event planning
+          </div>
+          <label class="selectLevel"
+            ><input type="radio" name="level" value="Gold" >Gold</label
+          >
+          <div>
+            ( $1200/year) Previous benefits, 40% discount on events,
+            participation in the strategic council
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Business Description</legend>
+          <label><textarea name="description" class="descript"></textarea></label>
+        </fieldset>
+        <input type="submit" value="Register" class="submitbtn">
+        <span hidden id="submitDate"></span>
+      </form>
+    </main>
+    <footer>
+      <img class="logo" src="images/Logo.png" alt="Logo">
+      <ul>
+        <li>200 Ave E WA, 98559</li>
+        <li>communeofyelm.com +(289) 328-4712</li>
+        <li>
+          <a href="https://www.google.com/maps/@46.9421613,-122.6148717,13z"
+            >Yelm</a
+          >
+        </li>
+      </ul>
+
+      <span>&copy;<span id="date"></span></span>
+      <span id="lastmodified"></span>
+    </footer>
+    <script src="js/hamburger.js"></script>
+    <script src="js/currentdate.js"></script>
+  </body>
+</html>

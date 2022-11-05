@@ -1,6 +1,7 @@
 body {
   font-size: 20px;
   font-family: "Roboto Mono", monospace;
+  
 }
 
 /*----HEADER------*/
@@ -60,6 +61,7 @@ main {
   justify-items: center;
   background-color: bisque;
   border: #e1c0564d groove;
+  
 }
 
 main section {
@@ -95,7 +97,7 @@ main picture img.gallery {
   width: 80%;
 }
 .gallery:hover {
-  margin-left: none;
+  margin-left: 0;
   opacity: 1;
 }
 
@@ -107,8 +109,56 @@ main picture img.gallery {
 /* Join page */
 
 
+form fieldset {
+  margin: 2rem 10px;
+  border-radius: 0.4rem;
+}
+
+form legend {
+  padding: 0.8rem; 
+  
+}
+
+form div {
+  margin: 5px;
+}
+
+form label.top {
+  display: block;
+  padding-top: 1rem;
+  margin: 5px;
+  font-size: 0.9em;
+}
+
+form label.top input {
+  display:block;
+  background-color: rgb(253, 242, 208);
+  border-radius: 0.4rem;
+  padding: .75rem;
+  
+  
+}
+
+form label.selectLevel {
+  display: block;
+  padding: .75rem;
+
+}
+
+form label textarea {
+  margin: 8px;
+  width: 98%;
+  height: 10rem;
+  border-radius: 0.4rem;
+}
+
+input.submitbtn {
+  margin: 1rem;
+  border-radius: 0.4rem;
+}
+
 /*----FOOTER------*/
-Footer {
+footer {
   margin: 8px;
   background-color: #75dcf3;
   border: #d1f0e9 solid;

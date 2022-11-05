@@ -22,5 +22,17 @@
         opacity: 0.8;
     
     }
+    form label.top {
+        display: flex;
+        padding-top: 1rem;
+        margin: 5px;
+        font-size: 0.9em;
+        flex-direction: column;
+        max-width: 25rem;
+      }
+
+      form label.top input {
+        padding: .50rem;
+      }
 
 }

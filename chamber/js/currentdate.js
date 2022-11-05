@@ -47,4 +47,6 @@ if (newDay === "Monday") {
   document.querySelector("#message").textContent = message;
 }
 
-//
+// Hidden element submit date Join page
+let hiddendate = new Date();
+document.querySelector("#submitDate").textContent = hiddendate

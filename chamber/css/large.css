@@ -8,4 +8,8 @@
     main picture img.gallery {
         width: auto;
     }
+
+    form label.top {
+        display: inline-grid;
+    }
 }
