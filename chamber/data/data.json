@@ -1,0 +1,22 @@
+{
+    "business": [
+    {  "name": "Lumber Mill",
+    "address": "55th 22nd Street East"},
+    {"name": "Gym Works",
+    "address": "55th 22nd Street East"},
+    {"name": "Lennar House Construction",
+    "address": "55th 22nd Street East"},
+    {"name": "Walmart",
+    "address": "55th 22nd Street East"},
+    {"name": "Safeway",
+    "address": "55th 22nd Street East"},
+    {"name": "Double Bed",
+    "address": "55th 22nd Street East"},
+    {"name": "Dentistry",
+    "address": "55th 22nd Street East"},
+    {"name": "Farmer Market",
+    "address": "55th 22nd Street East"},
+    {"name": "Key Bank",
+    "address": "55th 22nd Street East"}
+    ]
+}
