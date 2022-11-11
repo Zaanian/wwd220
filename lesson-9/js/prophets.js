@@ -20,9 +20,6 @@ fetch(requestURL)
     let prophetBirthPlace = document.createElement('h3')
     let portrait = document.createElement('img');
     
-
-    
-  
     // Change the textContent property of the h2 element to contain the prophet's full name
     h2.textContent = `${prophet.name} ${prophet.lastname} `;
 
