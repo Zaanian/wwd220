@@ -1,5 +1,5 @@
 //JSON data
-const request = 'chameber/json/data.json'
+const request = 'chamber/json/data.json'
 const cards = document.querySelector(".cards");
 
 
