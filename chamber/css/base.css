@@ -108,7 +108,6 @@ main picture img.gallery {
 }
 /* Join page */
 
-
 form fieldset {
   margin: 2rem 10px;
   border-radius: 0.4rem;
@@ -116,7 +115,6 @@ form fieldset {
 
 form legend {
   padding: 0.8rem; 
-  
 }
 
 form div {
@@ -135,14 +133,11 @@ form label.top input {
   background-color: rgb(253, 242, 208);
   border-radius: 0.4rem;
   padding: .75rem;
-  
-  
 }
 
 form label.selectLevel {
   display: block;
   padding: .75rem;
-
 }
 
 form label textarea {
@@ -155,6 +150,50 @@ form label textarea {
 input.submitbtn {
   margin: 1rem;
   border-radius: 0.4rem;
+}
+/* Directory page */
+main .directory {
+  display:block;
+}
+
+
+
+.menu {
+  margin: 5px;
+}
+
+.cards.list {
+  display: grid;
+  
+}
+.cards.list section {
+  border: 1px solid black;
+  padding: 1em;
+
+}
+.cards.list section img {
+  display: none;
+}
+
+.cards.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+.cards.grid section {
+  border: 1px solid black;
+  border-radius: 0.4rem;
+  margin: 1em;
+  background-color: #f5f6fa;
+  padding: 1em;
+}
+.cards.grid section span {
+  margin: 5px;
+}
+.cards.grid section a {
+  margin: 5px;
+}
+.cards.grid section img {
+  margin: 1px;
 }
 
 /*----FOOTER------*/

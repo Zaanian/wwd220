@@ -26,13 +26,33 @@
         <li><a href="join.html">Join</a></li>
       </ul>
     </nav>
-    <main>
-      <div class="cards"></div>
+    <main class="directory">
+      <h1>Chamber Directory</h1>
+      <div class="menu">
+      <button id="grid"> Cards </button>
+      <button id="list"> List </button>
+    </div>
+      <div class="cards grid list"></div>
     </main>
   </body>
   <footer>
+    <img class="logo" src="images/Logo.png" alt="Logo" />
+    <ul>
+      <li>200 Ave E WA, 98559</li>
+      <li>communeofyelm.com +(289) 328-4712</li>
+      <li>
+        <a href="https://www.google.com/maps/@46.9421613,-122.6148717,13z"
+          >Yelm</a
+        >
+      </li>
+    </ul>
 
+    <span>&copy;<span id="date"></span></span>
+    <span id="lastmodified"></span>
   </footer>
   <script src="js/directory.js"></script>
   <script src="js/hamburger.js"></script>
+  <script src="js/currentdate.js"></script>
+  <script src="js/lastmodified.js"></script>
+  <script src="js/lazyload.js"></script>
   </html>

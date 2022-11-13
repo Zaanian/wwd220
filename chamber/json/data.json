@@ -1,22 +1,66 @@
 {
     "business": [
     {  "name": "Lumber Mill",
-    "address": "55th 22nd Street East"},
+    "address": "55th 22nd Street East",
+    "membership": "non-profit",
+    "phonenumber": "123-654-9870",
+    "website": "www.Lumber-Mill.com",
+    "logo": ""},
+
     {"name": "Gym Works",
-    "address": "55th 22nd Street East"},
+    "address": "55th 22nd Street East",
+    "membership": "non-profit",
+    "phonenumber": "123-654-9870",
+    "website": "www.Gym-Works.com",
+    "logo": ""},
+
     {"name": "Lennar House Construction",
-    "address": "55th 22nd Street East"},
+    "address": "55th 22nd Street East",
+    "membership": "non-profit",
+    "phonenumber": "123-654-9870",
+    "website": "www.Lennar-House-Construction.com",
+    "logo": ""},
+
     {"name": "Walmart",
-    "address": "55th 22nd Street East"},
+    "address": "55th 22nd Street East",
+    "membership": "non-profit",
+    "phonenumber": "123-654-9870",
+    "website": "www.Walmart.com",
+    "logo": ""},
+
     {"name": "Safeway",
-    "address": "55th 22nd Street East"},
+    "address": "55th 22nd Street East",
+    "membership": "non-profit",
+    "phonenumber": "123-654-9870",
+    "website": "www.Safeway.com",
+    "logo": ""},
+
     {"name": "Double Bed",
-    "address": "55th 22nd Street East"},
+    "address": "55th 22nd Street East",
+    "membership": "non-profit",
+    "phonenumber": "123-654-9870",
+    "website": "www.Double-Bed.com",
+    "logo": ""},
+
     {"name": "Dentistry",
-    "address": "55th 22nd Street East"},
+    "address": "55th 22nd Street East",
+    "membership": "non-profit",
+    "phonenumber": "123-654-9870",
+    "website": "www.Dentistry.com",
+    "logo": ""},
+
     {"name": "Farmer Market",
-    "address": "55th 22nd Street East"},
+    "address": "55th 22nd Street East",
+    "membership": "non-profit",
+    "phonenumber": "123-654-9870",
+    "website": "www.Farmer-Market.com",
+    "logo": ""},
+
     {"name": "Key Bank",
-    "address": "55th 22nd Street East"}
+    "address": "55th 22nd Street East",
+    "membership": "non-profit",
+    "phonenumber": "123-654-9870",
+    "website": "www.Key-Bank.com",
+    "logo": "chamber/images/safway_logo-small.jpeg"}
     ]
 }

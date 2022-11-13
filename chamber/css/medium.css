@@ -35,4 +35,27 @@
         padding: .50rem;
       }
 
-}
+      /*directory*/
+
+      .cards.list {
+        display: grid;
+        
+      }
+      .cards.list section {
+        border: 1px solid black;
+      
+      }
+      .cards.list section img {
+        display: none;
+      }
+      .cards.grid section {
+        border: 1px solid black;
+        border-radius: 0.4rem;
+        margin: 1em;
+      }
+      .cards.grid section img {
+        margin: 1px;
+      }
+
+
+    }
