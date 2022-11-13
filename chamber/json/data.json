@@ -5,28 +5,28 @@
     "membership": "non-profit",
     "phonenumber": "123-654-9870",
     "website": "www.Lumber-Mill.com",
-    "logo": ""},
+    "logo": "https://raw.githubusercontent.com/Zaanian/wwd220/main/chamber/images/safeway-logo-small.webp"},
 
     {"name": "Gym Works",
     "address": "55th 22nd Street East",
     "membership": "non-profit",
     "phonenumber": "123-654-9870",
     "website": "www.Gym-Works.com",
-    "logo": ""},
+    "logo": "https://raw.githubusercontent.com/Zaanian/wwd220/main/chamber/images/gym-logo-small.webp"},
 
     {"name": "Lennar House Construction",
     "address": "55th 22nd Street East",
     "membership": "non-profit",
     "phonenumber": "123-654-9870",
     "website": "www.Lennar-House-Construction.com",
-    "logo": ""},
+    "logo": "https://raw.githubusercontent.com/Zaanian/wwd220/main/chamber/images/safeway-logo-small.webp"},
 
     {"name": "Walmart",
     "address": "55th 22nd Street East",
     "membership": "non-profit",
     "phonenumber": "123-654-9870",
     "website": "www.Walmart.com",
-    "logo": ""},
+    "logo": "https://raw.githubusercontent.com/Zaanian/wwd220/main/chamber/images/walmart-logo-small.webp"},
 
     {"name": "Safeway",
     "address": "55th 22nd Street East",
@@ -40,27 +40,27 @@
     "membership": "non-profit",
     "phonenumber": "123-654-9870",
     "website": "www.Double-Bed.com",
-    "logo": ""},
+    "logo": "https://raw.githubusercontent.com/Zaanian/wwd220/main/chamber/images/double-bed-logo-small.webp"},
 
     {"name": "Dentistry",
     "address": "55th 22nd Street East",
     "membership": "non-profit",
     "phonenumber": "123-654-9870",
     "website": "www.Dentistry.com",
-    "logo": ""},
+    "logo": "https://raw.githubusercontent.com/Zaanian/wwd220/main/chamber/images/dentastry-logo-small.webp"},
 
     {"name": "Farmer Market",
     "address": "55th 22nd Street East",
     "membership": "non-profit",
     "phonenumber": "123-654-9870",
     "website": "www.Farmer-Market.com",
-    "logo": ""},
+    "logo": "https://raw.githubusercontent.com/Zaanian/wwd220/main/chamber/images/safeway-logo-small.webp"},
 
     {"name": "Key Bank",
     "address": "55th 22nd Street East",
     "membership": "non-profit",
     "phonenumber": "123-654-9870",
     "website": "www.Key-Bank.com",
-    "logo": ""}
+    "logo": "https://raw.githubusercontent.com/Zaanian/wwd220/main/chamber/images/key-social-logo-small.webp"}
     ]
 }
