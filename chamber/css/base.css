@@ -159,9 +159,13 @@ main .directory {
 
 
 .menu {
-  margin: 5px;
+  margin: 1rem;
+  padding: 10px;
 }
 
+.title {
+  margin: 1em;
+}
 .cards.list {
   display: grid;
   
@@ -181,7 +185,7 @@ main .directory {
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 }
 .cards.grid section {
-  border: 1px solid black;
+  border: 3px solid #d4af5f;
   border-radius: 0.4rem;
   margin: 1em;
   background-color: #f5f6fa;
@@ -195,6 +199,8 @@ main .directory {
 }
 .cards.grid section img {
   margin: 1px;
+  border: 2px solid #d4af5f;
+
 }
 
 /*----FOOTER------*/

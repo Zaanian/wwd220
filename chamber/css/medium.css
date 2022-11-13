@@ -41,18 +41,10 @@
         display: grid;
         
       }
-      
       .cards.list section img {
         display: none;
       }
-      .cards.grid section {
-        border: 1px solid black;
-        border-radius: 0.4rem;
-        margin: 1em;
-      }
-      .cards.grid section img {
-        margin: 1px;
-      }
+    
 
 
     }
