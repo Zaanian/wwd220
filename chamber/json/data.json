@@ -33,7 +33,7 @@
     "membership": "non-profit",
     "phonenumber": "123-654-9870",
     "website": "www.Safeway.com",
-    "logo": "chamber/images/safeway_logo-small.webp"},
+    "logo": "https://raw.githubusercontent.com/Zaanian/wwd220/main/chamber/images/safeway-logo-small.webp"},
 
     {"name": "Double Bed",
     "address": "55th 22nd Street East",
