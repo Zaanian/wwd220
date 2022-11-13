@@ -33,7 +33,7 @@
     "membership": "non-profit",
     "phonenumber": "123-654-9870",
     "website": "www.Safeway.com",
-    "logo": ""},
+    "logo": "chamber/images/safeway_logo-small.webp"},
 
     {"name": "Double Bed",
     "address": "55th 22nd Street East",
@@ -61,6 +61,6 @@
     "membership": "non-profit",
     "phonenumber": "123-654-9870",
     "website": "www.Key-Bank.com",
-    "logo": "chamber/images/safway_logo-small.jpeg"}
+    "logo": ""}
     ]
 }

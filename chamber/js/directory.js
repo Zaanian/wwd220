@@ -1,7 +1,8 @@
 //JSON data
+const requestURL = "./json/data.json"
 const cards = document.querySelector(".cards");
 
-fetch("json/data.json").then(function (response) {
+fetch(requestURL).then(function (response) {
     return response.json();
 }).then(function(jsonObject) {
     console.table(jsonObject);  
