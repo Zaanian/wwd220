@@ -167,8 +167,9 @@ main .directory {
   
 }
 .cards.list section {
-  border: 1px solid black;
+  border: 2px solid #d4af5f;
   padding: 1em;
+  border-bottom: none;
 
 }
 .cards.list section img {

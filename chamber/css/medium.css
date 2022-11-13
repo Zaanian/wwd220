@@ -41,10 +41,7 @@
         display: grid;
         
       }
-      .cards.list section {
-        border: 1px solid black;
       
-      }
       .cards.list section img {
         display: none;
       }
