@@ -1,0 +1,45 @@
+
+body {
+    background-color: red;
+}
+
+main {
+    display: grid;
+    justify-items: center;
+    margin: 5px;
+    background-color: bisque;
+    border: 1px solid goldenrod;
+    border-radius: .4em;
+    
+}
+
+h1 {
+    margin: 1em;
+    border: 1px solid goldenrod;
+    padding: 1em;
+    border-radius: .4em;
+    background-color: rgb(250, 236, 219);
+    box-shadow: 0 0 15px goldenrod;
+}
+
+p {
+    margin: 1em;
+    font-size: larger;
+    border-bottom: 1px solid black;
+}
+
+h2 {
+    margin: 1em;
+    margin-bottom: 0.5em;
+}
+
+figure {
+    margin: 1em;
+    margin-top: 3px;
+    padding: 1em;
+    background-color: rgb(247, 234, 218);
+    border: 1px solid goldenrod;
+    border-radius: .4em;
+    box-shadow: 0 0 15px goldenrod;
+
+}
