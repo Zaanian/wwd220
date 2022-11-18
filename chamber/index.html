@@ -56,9 +56,22 @@
         </div>
         <h2>Weather</h2>
         <div>
-          <p id="airtemp">Air temperature: 40</p>
-          <p id="windMile">Wind Speed MPH: 20</p>
-          <span id="windchill">chill</span>
+          <p>
+            The current temperature in Yelm, Washington is
+            <span id="current-temp"></span>&deg;F
+          </p>
+          <p>The Windchill in Yelm is
+            <span id="windchill-temp"></span>&deg;F
+          </p>
+          <figure>
+            <img
+              src="https://openweathermap.org/img/w/03d.png"
+              alt="scattered clouds"
+              id="weather-icon"
+            />
+            <figcaption>scattered clouds</figcaption>
+          </figure>
+          <p>source</p><a href="https://openweathermap.org/">openweathermap.org</a>
         </div>
       </section>
     </main>
@@ -77,7 +90,7 @@
       <span>&copy;<span id="date"></span></span>
       <span id="lastmodified"></span>
     </footer>
-    <script src="js/windchill.js"></script>
+    <script src="js/weatherapi.js"></script>
     <script src="js/hamburger.js"></script>
     <script src="js/currentdate.js"></script>
     <script src="js/lastmodified.js"></script>
