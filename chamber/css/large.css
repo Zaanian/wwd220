@@ -17,5 +17,9 @@
       .cards.list section img {
         display: none;
       }
-      
+
+      /*weather-api*/
+      .weather-image {
+        margin-left: 48%;
     }
+  }

@@ -45,7 +45,7 @@ function displayWindchill(weatherData) {
 // s is the wind speed in miles per hour
     let chillwind = 35.74+0.6215*airTemp-35.75*x+0.4275*airTemp*x;
     
-    windchill.innerHTML = `${chillwind.toFixed(0)}`;
+    windchill.innerHTML = `<strong>${chillwind.toFixed(0)}</strong>`;
 
 }
 

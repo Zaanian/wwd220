@@ -85,8 +85,33 @@ h2 {
 }
 
 p {
-  margin: 5px;
+  margin: 8px;
+  padding: 5px;
 }
+/*Weather API*/
+div .weather-api {
+  margin: 8px;
+}
+
+figure {
+  border: solid 1px #d4af5f;
+  border-radius: .5em;
+  background-color: #d1f0e9;
+  
+}
+ .weather-image {
+  margin-left: 40%;
+}
+
+figcaption {
+  text-align: center;
+}
+
+
+
+
+
+
 
 /*Discover page */
 main.discover {

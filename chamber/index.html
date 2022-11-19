@@ -35,13 +35,13 @@
         <div>
           <img
             class="photo"
-            src="images/wdd230-org1.jpg"
+            src="images/hero-image.jpg"
             alt="happy meeting"
             sizes="60vw"
             srcset="
-              images/wdd230-org-small2.jpg  200w,
-              images/wdd230-org-medium2.jpg 500w,
-              images/wdd230-org-large2.jpg  800w
+              images/hero-image-small.jpg  200w,
+              images/hero-image-medium.jpg 500w,
+              images/hero-image-large.jpg  800w
             "
           />
           <p>Welcome to the Community of Yelm!</p>
@@ -55,23 +55,25 @@
           <p>Get to know your local community!</p>
         </div>
         <h2>Weather</h2>
-        <div>
+        <div class="weather-api">
           <p>
             The current temperature in Yelm, Washington is
             <span id="current-temp"></span>&deg;F
+
           </p>
           <p>The Windchill in Yelm is
             <span id="windchill-temp"></span>&deg;F
           </p>
           <figure>
             <img
+              class="weather-image"
               src="https://openweathermap.org/img/w/03d.png"
               alt="scattered clouds"
               id="weather-icon"
             />
             <figcaption>scattered clouds</figcaption>
           </figure>
-          <p>source</p><a href="https://openweathermap.org/">openweathermap.org</a>
+          <p>source: <a href="https://openweathermap.org/">openweathermap.org</a></p>
         </div>
       </section>
     </main>
