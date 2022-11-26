@@ -12,6 +12,19 @@
     form label.top {
         display: inline-grid;
     }
+
+    main section.home-page-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr auto;
+    }
+
+    main section div {
+      border: solid 2px black;
+    }
+    .photo {
+      width: 80%;
+      
+    }
     /*directory*/
       
       .cards.list section img {
@@ -21,5 +34,15 @@
       /*weather-api*/
       .weather-image {
         margin-left: 48%;
+    }
+    /*Contact page*/
+    .contactp {
+      display: grid;
+      grid-template-columns: 1fr 2fr ;
+      
+    }
+    input.submitbtn {
+      width: 40%;
+      height: 40%;
     }
   }

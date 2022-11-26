@@ -30,7 +30,33 @@
       </ul>
     </nav>
     <main>
-        
+      <h1>Contact</h1>
+      <form class="contactp" method="get" action="thankyou.html">
+        <fieldset>
+          <legend>Contact </legend>
+          <label class="top"
+            >Name*<input type="text" name="fname" required
+          ></label>
+          <label class="top"
+            >Email*<input
+              type="email"
+              name="email"
+              required
+              placeholder="business@gmail.com"
+          ></label>
+        </fieldset>
+        <fieldset>
+          <legend>Description</legend>
+          <label><textarea name="description" class="descript"></textarea></label>
+        </fieldset>
+        <input type="submit" value="Contact Us" class="submitbtn">
+        <span hidden id="submitDate"></span>
+        <fieldset>
+          <legend>Address</legend>
+          <div>28752 65th Header Street</div>
+          <div>Email: contact@freemail.com</div>
+        </fieldset>
+      </form>
     </main>
     <footer>
       <img class="logo" src="images/Logo.png" alt="Logo" />
@@ -47,5 +73,7 @@
       <span>&copy;<span id="date"></span></span>
       <span id="lastmodified"></span>
     </footer>
+    <script src="js/hamburger.js"></script>
+    <script src="js/currentdate.js"></script>
   </body>
 </html>
