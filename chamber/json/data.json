@@ -16,21 +16,21 @@
 
     {"name": "Lennar House Construction",
     "address": "108th 21st Buccaneer Street",
-    "membership": "non-profit",
+    "membership": "silver",
     "phonenumber": "825-951-6842",
     "website": "www.Lennar-House-Construction.com",
     "logo": "https://raw.githubusercontent.com/Zaanian/wwd220/main/chamber/images/lennar-logo-small.webp"},
 
     {"name": "Walmart",
     "address": "136th 52nd Paladin Street East",
-    "membership": "non-profit",
+    "membership": "silver",
     "phonenumber": "495-111-2828",
     "website": "www.Walmart.com",
     "logo": "https://raw.githubusercontent.com/Zaanian/wwd220/main/chamber/images/walmart-logo-small.webp"},
 
     {"name": "Safeway",
     "address": "138th 53rd Warlock Street West",
-    "membership": "non-profit",
+    "membership": "gold",
     "phonenumber": "333-444-9878",
     "website": "www.Safeway.com",
     "logo": "https://raw.githubusercontent.com/Zaanian/wwd220/main/chamber/images/safeway-logo-small.webp"},
@@ -58,7 +58,7 @@
 
     {"name": "Key Bank",
     "address": "249th 32nd Street North",
-    "membership": "non-profit",
+    "membership": "silver",
     "phonenumber": "269-357-1478",
     "website": "www.Key-Bank.com",
     "logo": "https://raw.githubusercontent.com/Zaanian/wwd220/main/chamber/images/key-social-logo-small.webp"}

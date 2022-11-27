@@ -21,9 +21,11 @@ fetch(requestURL).then(function (response) {
 
     
     h2.textContent = `${business.name} `;
-    address.textContent = `${business.address}`
-    website.textContent = `${business.website}`
-    phone.textContent = `${business.phonenumber}`
+    address.textContent = `${business.address}`;
+    website.textContent = `${business.website}`;
+    membershipLevel.textContent = `${business.membership}`;
+    phone.textContent = `${business.phonenumber}`;
+    
 
     logo.setAttribute('src', business.logo);
     logo.setAttribute('alt', `${business.name} logo`);
@@ -34,9 +36,11 @@ fetch(requestURL).then(function (response) {
 
     card.appendChild(logo);
     card.appendChild(h2);
-    card.appendChild(address)
-    card.appendChild(phone)
-    card.appendChild(website)
+    card.appendChild(address);
+    card.appendChild(phone);
+    card.appendChild(membershipLevel);
+    card.appendChild(website);
+    
 
    
     document.querySelector('div.cards').appendChild(card);

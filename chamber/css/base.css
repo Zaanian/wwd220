@@ -71,7 +71,8 @@ main section {
 
 main section div {
   padding: 1em;
-  border-bottom: #d4af5f solid;
+  border: 1px #d4af5f solid;
+  border-radius: 0.4rem;
   margin-top: 1em;
   margin-bottom: 1em;
 }
@@ -79,6 +80,10 @@ main section div {
 .photo {
   border-style: solid;
   border-color: #e1cd94;
+}
+
+div.cards {
+  display: none;
 }
 
 h2 {
@@ -125,6 +130,7 @@ main picture img.gallery {
   margin: 10px;
   border-style: solid;
   border-color: #e1cd94;
+  border-radius: 0.4em;
 }
 /* Join page */
 
