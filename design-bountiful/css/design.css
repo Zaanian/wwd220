@@ -1,0 +1,27 @@
+body {
+    background-color: #ace429;
+
+}
+header {
+    background-color: #ace429;
+    border: solid 2px #fbff00;
+}
+
+nav {
+    background-color: #fbff00;
+    border: solid 2px #fbff00;
+}
+
+main {
+    border: solid 2px #fbff00;
+}
+
+div {
+    background-color: #fbff00;
+}
+
+footer {
+    background-color: #f83737;
+    border: solid 2px #fbff00
+}
+
