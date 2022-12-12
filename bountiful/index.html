@@ -24,7 +24,18 @@
         <main class="home-index">
             <div class="business"></div>
             <div class="summary"></div>
-            <div class="weather"></div>
+            <div class="weather">
+                <p>The current temperature <span id="current-temp"></span></p>
+                <p>The humidity is <span id="humidity"></span></p>
+                <figure>
+                    <img
+                      class="weather-image"
+                      src="https://openweathermap.org/img/w/03d.png"
+                      alt="scattered clouds"
+                      id="weather-icon"
+                    />
+                  </figure>
+            </div>
             <div class="fresh"></div>
             <div class="number"></div>
         </main>
@@ -35,6 +46,7 @@
                 <li></li>
             </ul>
         </footer>
+        <script src="script/weather.js"></script>
     </body>
     
 </html>
