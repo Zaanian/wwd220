@@ -31,3 +31,5 @@ if (lastVisit !== 0) {
 	visitsDisplay.textContent = `Today is your first day here`;
 	localStorage.setItem("last-visit", Date.now());
 }
+
+console.log(localStorage)
