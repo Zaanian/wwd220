@@ -14,16 +14,21 @@
         </header>
         <nav>
             <ul>
-                <li><a href="index.html"></a></li>
-                <li><a href="fresh.html"></a></li>
-                <li><a href="about-us.html"></a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="fresh.html">Fresh</a></li>
+                <li><a href="about-us.html">About Us</a></li>
             </ul>
         </nav>
         <main class="home-index">
-            <div class="business"></div>
-            <div class="summary"></div>
+            <div class="business">
+                <h2>Business Information</h2>
+            </div>
+            <div class="summary">
+                <h2>Carlsbad</h2>
+            </div>
 
             <div class="weather">
+                <h2>Weather Forecast for Carlsbad</h2>
                 <div class="temp">
                     <p>Today <span id="test"></span></p>
                     <p>The current temperature <span id="current-temp"></span></p>
@@ -36,47 +41,50 @@
                           id="weather-icon"
                         />
                       </figure>
-                      <p><span class="describe"></span></p>
+                      <p><span id="describe"></span></p>
                 </div>
                 <div class="temp">
                     <p>Tommorrow <span id="date2nd"></span></p>
-                    <p>The temperature <span id="current-temp"></span></p>
-                    <p>The humidity is <span id="humidity"></span></p>
+                    <p>The temperature <span id="secondndtemp"></span></p>
+                    <p>The humidity is <span id="humidity-second"></span></p>
                     <figure>
                         <img
                           class="weather-image"
                           src="https://openweathermap.org/img/w/03d.png"
                           alt="scattered clouds"
-                          id="weather-icon"
+                          id="weather-icon-second"
                         />
                       </figure>
-                      <p><span class="describe"></span></p>
+                      <p><span id="describe-second"></span></p>
                 </div>
                 <div class="temp">
                     <p>Third day<span id="date-3rd"></span></p>
-                    <p>The temperature <span id="current-temp"></span></p>
-                    <p>The humidity is <span id="humidity"></span></p>
+                    <p>The temperature <span id="thirdtemp"></span></p>
+                    <p>The humidity is <span id="humidity-third"></span></p>
                     <figure>
                         <img
                           class="weather-image"
                           src="https://openweathermap.org/img/w/03d.png"
                           alt="scattered clouds"
-                          id="weather-icon"
+                          id="weather-icon-third"
                         />
                       </figure>
-                      <p><span class="describe"></span></p>
+                      <p><span id="describe-third"></span></p>
                 </div>
                   
             </div>
-            <div class="fresh"></div>
-                <p>local data <span id="test"></span></p>
+            <div class="fresh">
+                <h2>Make your own fruit drinks here!</h2>
+                <p><a href="fresh.html">Drinks</a></p>
+            </div>
             <div class="number"></div>
         </main>
         <footer>
+            <img>
             <ul>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li>Facebook</li>
+                <li>Youtube</li>
+                <li>Twitter</li>
             </ul>
         </footer>
         <script src="script/weather.js"></script>
