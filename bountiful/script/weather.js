@@ -18,6 +18,7 @@ const description = document.querySelector('#describe');
 const description2 = document.querySelector('#describe-second');
 const description3 = document.querySelector('#describe-third');
 
+
 //Links to openweather.org
 const link = "https://api.openweathermap.org/data/2.5/forecast?q=Carlsbad&appid=b5cf513fee5b29c16ccd6349eff084ae&cnt=12&units=imperial"
 const link2 = "https://api.openweathermap.org/data/2.5/weather?q=Carlsbad&appid=70f32d8e36945d218801df44e122e1c2&units=imperial"
