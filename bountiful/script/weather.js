@@ -1,6 +1,8 @@
 const currentTemp = document.querySelector('#current-temp');
 const weatherhumidity = document.querySelector('#humidity');
 const weatherIcon = document.querySelector('#weather-icon');
+const description = document.querySelector('.describe')
+
 
 
 
@@ -45,13 +47,18 @@ function displayResults(weatherData) {
 
     weatherIcon.setAttribute('src', iconsrc);
     weatherIcon.setAttribute('alt', desc);
+    description.textContent = desc;
     
 
 }
 
 function displayResults2(weatherData2) {
     weatherhumidity.innerHTML = `<strong>${weatherData2.list[0].main.humidity.toFixed(0)}</strong>`;
-    
+    const desc = weatherData2.weather[0].description;
+
+    weatherIcon.setAttribute('src', iconsrc);
+    weatherIcon.setAttribute('alt', desc);
+    description.textContent = desc;
 
     
 
