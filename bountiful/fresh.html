@@ -17,6 +17,9 @@
       </ul>
     </nav>
     <main>
+        <head>
+            <h1>Order Fresh Drink</h1>
+        </head>
       <form method="get">
         <fieldset>
           <legend>Contact Info</legend>
@@ -41,7 +44,7 @@
         <fieldset>
             <legend>Fruit mixer</legend>
             <label class="bottom">
-                <select name="selection" id="torque"></select>
+                <select name="selection" id="torque" required></select>
             </label>
             <label class="bottom">
                 <select name="selector" id="work"></select>
@@ -50,6 +53,9 @@
                 <select name="select" id="play"></select>
             </label>
         </fieldset>
+        <fieldset>
+            <input type="submit" value="order" id="orderbtn">
+        </fieldset>
       </form>
       <div>
         <span id="tester"></span>
@@ -57,5 +63,6 @@
     </main>
     <footer></footer>
     <script src="script/json-get.js"></script>
+    <script src="script/fresh-order.js"></script>
   </body>
 </html>
