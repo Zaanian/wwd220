@@ -54,6 +54,4 @@ while (arrayCount <= 38) {
     document.querySelector("#fruit-one").append(firstFruit);
     document.querySelector("#fruit-two").append(secondFruit);
     document.querySelector("#fruit-three").append(thirdFruit);
-
-    //console.log(firstFruit)
   }

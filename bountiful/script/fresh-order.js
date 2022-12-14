@@ -5,7 +5,7 @@ fetch(requestURL)
   .then(function (jsonObject) {
     console.table(jsonObject);
     const fruit = jsonObject;
-    let currentnumber = localStorage.setItem("numbtn", 0);
+    //let currentnumber = localStorage.setItem("numbtn", 0);
     const orderButton = document.getElementById("orderbtn");
     const clearButton = document.getElementById("clearbtn");
 
@@ -36,18 +36,29 @@ fetch(requestURL)
       console.log(selectName);
       console.log(selectEmail);
       console.log(selectPhone);
-
-      if (selectValuesone, selectValuestwo, selectValuesthree == -1) {
-        alert("please choose a fruit");
-      } else {
-      console.log(fruit);
-      displayOrder(
-        fruit,selectValuesone,selectValuestwo,selectValuesthree,selectName,selectEmail,selectPhone);
-      currentnumber = Number(window.localStorage.getItem("numbtn"));
-      let adding = currentnumber + 1;
-      localStorage.setItem("numbtn", adding);
-      console.log(localStorage);
-      console.log(selecting2);
+      if (selectName === "") {
+        alert("Please enter your name.")
+    } else {
+        if (selectEmail === "") {
+            alert("Please enter your email.")
+        } else {
+            if (selectPhone === "") {
+                alert("Please enter your phone number.")
+            } else {
+                if (selectValuesone, selectValuestwo, selectValuesthree == -1) {
+                    alert("Please choose three fruits.");
+                  } else {
+                  console.log(fruit);
+                  displayOrder(
+                    fruit,selectValuesone,selectValuestwo,selectValuesthree,selectName,selectEmail,selectPhone);
+                  let currentnumber = Number(window.localStorage.getItem("numbtn"));
+                  let adding = currentnumber + 1;
+                  localStorage.setItem("numbtn", adding);
+                  console.log(localStorage);
+                };
+            }
+        }
+        
     };
 
     clearButton.addEventListener("click", () => {
@@ -59,24 +70,22 @@ fetch(requestURL)
   }});
 
 //functions
+//Display order on page.
 function displayOrder(data, index1, index2, index3, fname, emailg, cell) {
   let card = document.createElement("section");
   let name = document.createElement("div");
   let email = document.createElement("div");
   let phone = document.createElement("div");
   let displayFruit = document.createElement("span");
+  let orderDate = document.createElement("div")
 
   let carbs = document.createElement("p");
   let sugar = document.createElement("p");
   let protein = document.createElement("p");
   let fat = document.createElement("p");
   let calories = document.createElement("p");
-    
-  let fruitname1 = data[index1].name;
-  let fruitname2 = data[index2].name;
-  let fruitname3 = data[index3].name;
   
-  displayFruit.textContent = `${fruitname1}, ${fruitname2}, ${fruitname3}`;
+  displayFruit.textContent = `${data[index1].name}, ${data[index2].name}, ${data[index3].name}`;
 
   const totalcarbs = calculateCarbs(data, index1, index2, index3);
   const totalsugar = calculateSugar(data, index1, index2, index3);
@@ -84,9 +93,12 @@ function displayOrder(data, index1, index2, index3, fname, emailg, cell) {
   const totalfat = calculateFat(data, index1, index2, index3);
   const totalcalories = calculateCalories(data, index1, index2, index3);
 
+    let theDate = window.localStorage.getItem("date-time");
+
   name.textContent = fname;
   email.textContent = emailg;
   phone.textContent = cell;
+  orderDate.textContent =  `Order Date: ${theDate.substring(0,16)}`;
 
   carbs.textContent = `Total Carbohydrates: ${totalcarbs}`;
   sugar.textContent = `Total Sugar: ${totalsugar}`;
@@ -94,6 +106,7 @@ function displayOrder(data, index1, index2, index3, fname, emailg, cell) {
   fat.textContent = `Total Fat: ${totalfat}`;
   calories.textContent = `Total Calories: ${totalcalories}`;
 
+  card.appendChild(orderDate);
   card.appendChild(displayFruit);
   card.appendChild(carbs);
   card.appendChild(sugar);
