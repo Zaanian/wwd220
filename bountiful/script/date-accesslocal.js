@@ -39,5 +39,9 @@ document.querySelector("#date-second").innerHTML = `<strong>${day2}, ${month} ${
 document.querySelector("#date-third").innerHTML = `<strong>${day}, ${month} ${data.getDate() + 2}, ${year}</strong>`;
 console.log(localStorage);
 //-------------------
+//Get number of drinks ordered
 
+const numberOrdered = Number(window.localStorage.getItem("numbtn"))
+let numberButn = document.querySelector(".number")
+numberButn.textContent = `Total number of drinks ordered: ${numberOrdered}`
 
