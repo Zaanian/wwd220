@@ -44,22 +44,29 @@
         <fieldset>
             <legend>Fruit mixer</legend>
             <label class="bottom">
-                <select name="selection" id="torque" required></select>
+                <select name="selection" id="fruit-one" required></select>
             </label>
             <label class="bottom">
-                <select name="selector" id="work"></select>
+                <select name="selector" id="fruit-two"></select>
             </label>
             <label class="bottom">
-                <select name="select" id="play"></select>
+                <select name="select" id="fruit-three"></select>
             </label>
         </fieldset>
         <fieldset>
-            <input type="submit" value="order" id="orderbtn">
+          <legend>Special Instructions</legend>
+          <label>
+            <textarea name="instructions" class="instruct" placeholder="Use If you want the drinks made in a special way."></textarea>
+          </label>
+        </fieldset>
+        <fieldset>
+            <input type="submit" value="Order" id="orderbtn">
+            <input type="button" value="Clear" id="clearbtn">
         </fieldset>
       </form>
-      <div>
-        <span id="tester"></span>
-      </div>
+      <div id="orderinfo-one" class="frooty-fruit"></div>
+      <div id="orderinfo-two" class="frooty-fruit"></div>
+      <div id="orderinfo-three" class="frooty-fruit"></div>
     </main>
     <footer>
       <span id="lastmodified"></span>

@@ -12,8 +12,6 @@ while (arrayCount <= 38) {
   displaySelection(fruit, arrayCount);
   arrayCount++;
 }
-
-
   });
 
   //function
@@ -31,9 +29,9 @@ while (arrayCount <= 38) {
     nonselect3.setAttribute("name", "none")
     nonselect3.textContent = `None`
 
-    document.querySelector("#torque").append(nonselect1);
-    document.querySelector("#work").append(nonselect2);
-    document.querySelector("#play").append(nonselect3);
+    document.querySelector("#fruit-one").append(nonselect1);
+    document.querySelector("#fruit-two").append(nonselect2);
+    document.querySelector("#fruit-three").append(nonselect3);
 
 
 
@@ -53,7 +51,9 @@ while (arrayCount <= 38) {
     thirdFruit.setAttribute("name", data[Count].name);
     thirdFruit.textContent = `${data[Count].name}`;
 
-    document.querySelector("#torque").append(firstFruit);
-    document.querySelector("#work").append(secondFruit);
-    document.querySelector("#play").append(thirdFruit);
+    document.querySelector("#fruit-one").append(firstFruit);
+    document.querySelector("#fruit-two").append(secondFruit);
+    document.querySelector("#fruit-three").append(thirdFruit);
+
+    //console.log(firstFruit)
   }
