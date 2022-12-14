@@ -62,9 +62,10 @@ fetch(requestURL)
     };
 
     clearButton.addEventListener("click", () => {
-      const display = document.querySelector(".frooty-fruit");
+      const display = document.querySelector("#clearing");
       console.log(display);
-      display.remove();
+      try {display.remove();}
+      catch(err){}
       
     });
   }});
@@ -78,6 +79,7 @@ function displayOrder(data, index1, index2, index3, fname, emailg, cell) {
   let phone = document.createElement("div");
   let displayFruit = document.createElement("span");
   let orderDate = document.createElement("div")
+  let instructions = document.createElement("p")
 
   let carbs = document.createElement("p");
   let sugar = document.createElement("p");
@@ -94,7 +96,9 @@ function displayOrder(data, index1, index2, index3, fname, emailg, cell) {
   const totalcalories = calculateCalories(data, index1, index2, index3);
 
     let theDate = window.localStorage.getItem("date-time");
+    const specinstructions = document.getElementById("special-inst");
 
+    instructions.textContent = specinstructions.value;
   name.textContent = fname;
   email.textContent = emailg;
   phone.textContent = cell;
@@ -105,9 +109,11 @@ function displayOrder(data, index1, index2, index3, fname, emailg, cell) {
   protein.textContent = `Total Protein: ${totalprotein}`;
   fat.textContent = `Total Fat: ${totalfat}`;
   calories.textContent = `Total Calories: ${totalcalories}`;
+  card.setAttribute("id", "clearing")
 
   card.appendChild(orderDate);
   card.appendChild(displayFruit);
+  card.appendChild(instructions);
   card.appendChild(carbs);
   card.appendChild(sugar);
   card.appendChild(protein);
