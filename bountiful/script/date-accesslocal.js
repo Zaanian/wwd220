@@ -38,4 +38,6 @@ document.querySelector("#date").innerHTML = `<strong>${day}, ${month} ${data.get
 document.querySelector("#date-second").innerHTML = `<strong>${day2}, ${month} ${data.getDate() + 1}, ${year}</strong>`;
 document.querySelector("#date-third").innerHTML = `<strong>${day}, ${month} ${data.getDate() + 2}, ${year}</strong>`;
 console.log(localStorage);
+//-------------------
+
 

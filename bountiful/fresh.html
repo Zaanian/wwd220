@@ -1,23 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Fresh</title>
-        <link href="css/normalize.css" rel="stylesheet"/>
-        <link href="css/small.css" rel="stylesheet"/>
-        <link href="css/medium.css" rel="stylesheet"/>
-        <link href="css/large.css" rel="stylesheet"/>
-    </head>
-    <body>
-        <header></header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="fresh.html">Fresh</a></li>
-                <li><a href="about-us.html">About Us</a></li>
-            </ul>
-        </nav>
-        <main></main>
-        <footer></footer>
-    </body>
-    
+  <head>
+    <title>Fresh</title>
+    <link href="css/normalize.css" rel="stylesheet" />
+    <link href="css/small.css" rel="stylesheet" />
+    <link href="css/medium.css" rel="stylesheet" />
+    <link href="css/large.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header></header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="fresh.html">Fresh</a></li>
+        <li><a href="about-us.html">About Us</a></li>
+      </ul>
+    </nav>
+    <main>
+      <form method="get">
+        <fieldset>
+          <legend>Contact Info</legend>
+          <label class="top"
+            >First Name*<input type="text" name="fname" required
+          /></label>
+          <label class="top"
+            >Email*<input
+              type="email"
+              name="email"
+              required
+              placeholder="business@gmail.com"
+          /></label>
+          <label class="top"
+            >Cell Phone Number*<input
+              type="tel"
+              name="cellphone"
+              placeholder="1235551234"
+              required
+          /></label>
+        </fieldset>
+        <fieldset>
+            <legend>Fruit mixer</legend>
+            <label class="bottom">
+                <select name="selection" id="torque"></select>
+            </label>
+            <label class="bottom">
+                <select name="selector" id="work"></select>
+            </label>
+            <label class="bottom">
+                <select name="select" id="play"></select>
+            </label>
+        </fieldset>
+      </form>
+      <div>
+        <span id="tester"></span>
+      </div>
+    </main>
+    <footer></footer>
+    <script src="script/json-get.js"></script>
+  </body>
 </html>
