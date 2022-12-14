@@ -24,7 +24,7 @@
         <fieldset>
           <legend>Contact Info</legend>
           <label class="top"
-            >First Name*<input type="text" name="fname" required
+            >First Name*<input type="text" name="fname" id="first-name" required
           /></label>
           <label class="top"
             >Email*<input
@@ -32,6 +32,7 @@
               name="email"
               required
               placeholder="business@gmail.com"
+              id="input-email"
           /></label>
           <label class="top"
             >Cell Phone Number*<input
@@ -39,6 +40,7 @@
               name="cellphone"
               placeholder="1235551234"
               required
+              id="input-phone"
           /></label>
         </fieldset>
         <fieldset>
@@ -47,10 +49,10 @@
                 <select name="selection" id="fruit-one" required></select>
             </label>
             <label class="bottom">
-                <select name="selector" id="fruit-two"></select>
+                <select name="selector" id="fruit-two" required></select>
             </label>
             <label class="bottom">
-                <select name="select" id="fruit-three"></select>
+                <select name="select" id="fruit-three" required></select>
             </label>
         </fieldset>
         <fieldset>
@@ -65,8 +67,6 @@
         </fieldset>
       </form>
       <div id="orderinfo-one" class="frooty-fruit"></div>
-      <div id="orderinfo-two" class="frooty-fruit"></div>
-      <div id="orderinfo-three" class="frooty-fruit"></div>
     </main>
     <footer>
       <span id="lastmodified"></span>

@@ -1,100 +1,152 @@
-
-fetch(requestURL).then(function (response) {
+fetch(requestURL)
+  .then(function (response) {
     return response.json();
-}).then(function(jsonObject) {
-    console.table(jsonObject);  
-    const fruit = jsonObject 
-    let currentnumber = localStorage.setItem("numbtn", 0)
-    const orderButton = document.getElementById("orderbtn")
-    const clearButton = document.getElementById("clearbtn")
-    const selectfruitOne = document.getElementById("fruit-one")
-    const selectfruitTwo = document.getElementById("fruit-two")
-    const selectfruiTthree = document.getElementById("fruit-three")
-    
-orderButton.onclick = (e) =>
-{
-    e.preventDefault();
-    const selectValuesone = [].filter.call(selectfruitOne.options, option => option.selected).map (option => option.index-1);
-    const selectValuestwo = [].filter.call(selectfruitTwo.options, option => option.selected).map (option => option.index-1);
-    const selectValuesthree = [].filter.call(selectfruiTthree.options, option => option.selected).map (option => option.index-1);
+  })
+  .then(function (jsonObject) {
+    console.table(jsonObject);
+    const fruit = jsonObject;
+    let currentnumber = localStorage.setItem("numbtn", 0);
+    const orderButton = document.getElementById("orderbtn");
+    const clearButton = document.getElementById("clearbtn");
 
-    if (selectValuesone == -1) {
-        alert("please choose a fruit")
-        let fur = 0
-    } else {
-        let fur = 1
-        currentnumber = Number(window.localStorage.getItem("numbtn"))
-        let adding = currentnumber+1;
-        localStorage.setItem("numbtn", adding);
-        calculateNutrition(fruit, selectValuesone, fur)
-    }
+    const getNameInput = document.getElementById("first-name");
+    const getEmailInput = document.getElementById("input-email");
+    const getPhoneInput = document.getElementById("input-phone");
 
-    if (selectValuestwo == -1) {
-        let furTwo = 0
-    } else {
-        let furTwo = 2
-        calculateNutrition(fruit, selectValuestwo, furTwo)
-    }
+    const selectfruitOne = document.getElementById("fruit-one");
+    const selectfruitTwo = document.getElementById("fruit-two");
+    const selectfruiTthree = document.getElementById("fruit-three");
 
-    if (selectValuesthree == -1) {
-        let furThree = 0
-    } else {
-        let furThree = 3
-        calculateNutrition(fruit, selectValuesthree, furThree)
-    }
+    orderButton.onclick = (e) => {
+      e.preventDefault();
+      const selectValuesone = [].filter
+        .call(selectfruitOne.options, (option) => option.selected)
+        .map((option) => option.index - 1);
+      const selectValuestwo = [].filter
+        .call(selectfruitTwo.options, (option) => option.selected)
+        .map((option) => option.index - 1);
+      const selectValuesthree = [].filter
+        .call(selectfruiTthree.options, (option) => option.selected)
+        .map((option) => option.index - 1);
 
-    console.log(localStorage)
-}
+      const selectName = getNameInput.value;
+      const selectEmail = getEmailInput.value;
+      const selectPhone = getPhoneInput.value;
 
-clearButton.addEventListener("click", () => {
-    const display = document.querySelector(".frooty-fruit")
-    console.log(display)
-    display.remove()
-});
-});
+      console.log(selectName);
+      console.log(selectEmail);
+      console.log(selectPhone);
 
+      if (selectValuesone, selectValuestwo, selectValuesthree == -1) {
+        alert("please choose a fruit");
+      } else {
+      console.log(fruit);
+      displayOrder(
+        fruit,selectValuesone,selectValuestwo,selectValuesthree,selectName,selectEmail,selectPhone);
+      currentnumber = Number(window.localStorage.getItem("numbtn"));
+      let adding = currentnumber + 1;
+      localStorage.setItem("numbtn", adding);
+      console.log(localStorage);
+      console.log(selecting2);
+    };
+
+    clearButton.addEventListener("click", () => {
+      const display = document.querySelector(".frooty-fruit");
+      console.log(display);
+      display.remove();
+      
+    });
+  }});
 
 //functions
+function displayOrder(data, index1, index2, index3, fname, emailg, cell) {
+  let card = document.createElement("section");
+  let name = document.createElement("div");
+  let email = document.createElement("div");
+  let phone = document.createElement("div");
+  let displayFruit = document.createElement("span");
 
-function displayOrder(data, index) {
+  let carbs = document.createElement("p");
+  let sugar = document.createElement("p");
+  let protein = document.createElement("p");
+  let fat = document.createElement("p");
+  let calories = document.createElement("p");
+    
+  let fruitname1 = data[index1].name;
+  let fruitname2 = data[index2].name;
+  let fruitname3 = data[index3].name;
+  
+  displayFruit.textContent = `${fruitname1}, ${fruitname2}, ${fruitname3}`;
 
+  const totalcarbs = calculateCarbs(data, index1, index2, index3);
+  const totalsugar = calculateSugar(data, index1, index2, index3);
+  const totalprotein = calculateProtein(data, index1, index2, index3);
+  const totalfat = calculateFat(data, index1, index2, index3);
+  const totalcalories = calculateCalories(data, index1, index2, index3);
+
+  name.textContent = fname;
+  email.textContent = emailg;
+  phone.textContent = cell;
+
+  carbs.textContent = `Total Carbohydrates: ${totalcarbs}`;
+  sugar.textContent = `Total Sugar: ${totalsugar}`;
+  protein.textContent = `Total Protein: ${totalprotein}`;
+  fat.textContent = `Total Fat: ${totalfat}`;
+  calories.textContent = `Total Calories: ${totalcalories}`;
+
+  card.appendChild(displayFruit);
+  card.appendChild(carbs);
+  card.appendChild(sugar);
+  card.appendChild(protein);
+  card.appendChild(fat);
+  card.appendChild(calories);
+
+  document.querySelector("#orderinfo-one").appendChild(card);
 }
 
-function calculateNutrition(data, index, section) {
-    let card = document.createElement("section")
-    let name = document.createElement("p");
-    let carbs = document.createElement("p")
-    let sugar = document.createElement("p")
-    let protein = document.createElement("p")
-    let fat = document.createElement("p")
-    let calories = document.createElement("p")
+function calculateCarbs(data, index1, index2, index3) {
+  let carbs1 = Number(data[index1].nutritions.carbohydrates);
+  let carbs2 = Number(data[index2].nutritions.carbohydrates);
+  let carbs3 = Number(data[index3].nutritions.carbohydrates);
 
-    name.textContent = `${data[index].name}`;
-    carbs.textContent = `Carbohydrates ${data[index].nutritions.carbohydrates}`;
-    sugar.textContent = `Sugar ${data[index].nutritions.sugar}`;
-    protein.textContent = `Protein ${data[index].nutritions.protein}`;
-    fat.textContent = `Fat ${data[index].nutritions.fat}`;
-    calories.textContent = `Calories ${data[index].nutritions.calories}`;
-
-    card.appendChild(name);
-    card.appendChild(carbs);
-    card.appendChild(sugar);
-    card.appendChild(protein);
-    card.appendChild(fat);
-    card.appendChild(calories);
-
-    if (section == 0) {
-        gin = 0
-    } else if (section == 1){
-        card.setAttribute("class", "border")
-        document.querySelector("#orderinfo-one").append(card);
-    } else if (section == 2){
-        card.setAttribute("class", "border")
-        document.querySelector("#orderinfo-two").append(card);
-    } else if (section == 3){
-        card.setAttribute("class", "border")
-        document.querySelector("#orderinfo-three").append(card);
-    }
+  let totalcarbs = carbs1 + carbs2 + carbs3;
+  return totalcarbs;
 }
 
-console.log(localStorage)
+function calculateSugar(data, index1, index2, index3) {
+  let sugar1 = Number(data[index1].nutritions.sugar);
+  let sugar2 = Number(data[index2].nutritions.sugar);
+  let sugar3 = Number(data[index3].nutritions.sugar);
+
+  let totalsugar = sugar1 + sugar2 + sugar3;
+  return totalsugar;
+}
+
+function calculateProtein(data, index1, index2, index3) {
+  let protein1 = Number(data[index1].nutritions.protein);
+  let protein2 = Number(data[index2].nutritions.protein);
+  let protein3 = Number(data[index3].nutritions.protein);
+
+  let totalprotein = protein1 + protein2 + protein3;
+  return totalprotein;
+}
+
+function calculateFat(data, index1, index2, index3) {
+  let fat1 = Number(data[index1].nutritions.fat);
+  let fat2 = Number(data[index2].nutritions.fat);
+  let fat3 = Number(data[index3].nutritions.fat);
+
+  let totalfat = fat1 + fat2 + fat3;
+  return totalfat;
+}
+
+function calculateCalories(data, index1, index2, index3) {
+  let calories1 = Number(data[index1].nutritions.calories);
+  let calories2 = Number(data[index2].nutritions.calories);
+  let calories3 = Number(data[index3].nutritions.calories);
+
+  let totalcalories = calories1 + calories2 + calories3;
+  return totalcalories;
+}
+
+console.log(localStorage);

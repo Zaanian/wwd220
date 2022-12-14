@@ -24,10 +24,10 @@ while (arrayCount <= 38) {
     nonselect1.textContent = `None*`
 
     nonselect2.setAttribute("name", "none")
-    nonselect2.textContent = `None`
+    nonselect2.textContent = `None*`
 
     nonselect3.setAttribute("name", "none")
-    nonselect3.textContent = `None`
+    nonselect3.textContent = `None*`
 
     document.querySelector("#fruit-one").append(nonselect1);
     document.querySelector("#fruit-two").append(nonselect2);
