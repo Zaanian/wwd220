@@ -5,6 +5,13 @@ body {
     text-align: center;
 }
 
+header {
+    margin: 1em;
+    border:rgb(231, 10, 10) solid 8px;
+    padding: 1em;
+    background-color: rgba(255, 0, 0, 0.5);
+}
+
 main {
     margin: 1rem;
     padding: 1em;
@@ -14,25 +21,21 @@ main {
 
 main div {
     margin:1em;
-    border:#f1d50a solid 4px;
+    border:rgb(241, 213, 10) solid 4px;
+    background-color: rgba(241, 214, 10, 0.4);
 }
 
-main div .temp {
-    border:rgb(231, 10, 10) solid 4px;
-}
-
-header {
-    margin: 1em;
-    border:rgb(231, 10, 10) solid 8px;
+main div.temp {
+    margin: 0.5em;;
     padding: 1em;
-    background-color: rgba(255, 0, 0, 0.5);
+    border:rgb(250, 22, 22) solid 2px;
+    background-color: rgba(228, 128, 128, 0.623);
 }
 
 nav {
     margin: 1em;
     border:solid 8px #f1d50a;
     background-color: rgba(241, 214, 10, 0.5);
-    
 }
 
 nav ul {
@@ -50,43 +53,116 @@ nav ul li {
     background-color: rgba(255, 0, 0, 0.5);
     
 }
+a:link {
+    color: black;
+}
+a:visited {
+    color: blue;
+}
+a:hover {
+    color: wheat;
+}
+
+
+
+.fruity-drinks {
+    margin: 0.5em;
+    width: 85%;
+    border:solid yellowgreen 2px;
+
+    
+}
 
 .linky {
-    color: rgba(0, 0, 0, 0.5);
-    
+    display: flex;
+    margin: 0.5em;
+    padding:0.5em;
+
+}
+.linky li {
+    margin:0.5em;
 }
 
 .logo {
     margin: 1em;
-    padding: 2px;
+    padding: 0.5em;
+    width:100px;
+    height:100px;
+    border: 2px #e91111 solid;
+    border-radius: 10px;
 }
 
-footer {
+p {
+    font-family: sans-serif;
+}
+
+div.number {
+    font-family: sans-serif;
+    padding: 5px;
+    background-color: rgba(153, 205, 50, 0.5);
+}
+div.social ul {
     display: flex;
-    flex: 1fr 1fr 1em;
-    align-items: center;
-    margin: 1em;
+    list-style-type: none;
+    padding: 0.5em;
+    width:95%;
+}
+
+div.social ul li {
+    margin:0.5em;
+    
+}
+ul {
+    list-style-type: none;
+}
+footer {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 0.5em;
     border: 8px rgb(231, 10, 10) solid;
     background-color: rgb(245, 148, 148);
 }
-footer ul {
-    margin: 1em;
-    list-style-type:none;
-    
-}
-footer ul li {
-    margin: 1em;
-    padding: 2px;
-}
 
+.source p {
+    margin:1em;
+}
+    
 .last-modded {
-    margin: 1em;
+    margin: 0.5em;
 }
 
 /*-- Fresh Page --*/
 
+h1 {
+    margin: 0.5em;
+}
 
 fieldset {
+    margin:0.5em;
     border: yellowgreen 2px solid;
     
+}
+form {
+    margin: 0.5em;
+}
+input {
+    margin: 0.5em;
+}
+select {
+    margin: 0.5em;
+}
+label {
+    display:block;
+    margin: 0.5em;
+}
+
+/*-- About Us Page --*/
+
+main div.mapbtn {
+    padding: 1em;
+}
+
+.content {
+    margin:1em;
+    font-family:sans-serif;
 }
