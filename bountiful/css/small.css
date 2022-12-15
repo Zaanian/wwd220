@@ -1,9 +1,92 @@
 
 body {
     margin: 1rem;
+    font-size: large;
+    text-align: center;
 }
 
 main {
     margin: 1rem;
     padding: 1em;
+    border: 8px solid yellowgreen;
+    background-color: rgba(153, 205, 50, 0.5);
+}
+
+main div {
+    margin:1em;
+    border:#f1d50a solid 4px;
+}
+
+main div .temp {
+    border:rgb(231, 10, 10) solid 4px;
+}
+
+header {
+    margin: 1em;
+    border:rgb(231, 10, 10) solid 8px;
+    padding: 1em;
+    background-color: rgba(255, 0, 0, 0.5);
+}
+
+nav {
+    margin: 1em;
+    border:solid 8px #f1d50a;
+    background-color: rgba(241, 214, 10, 0.5);
+    
+}
+
+nav ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 1em;
+    list-style-type:none;
+    border:solid 4px yellowgreen;
+    background-color: rgba(153, 205, 50, 0.5);
+}
+
+nav ul li {
+    margin: 10px;
+    border:solid 2px red;
+    background-color: rgba(255, 0, 0, 0.5);
+    
+}
+
+.linky {
+    color: rgba(0, 0, 0, 0.5);
+    
+}
+
+.logo {
+    margin: 1em;
+    padding: 2px;
+}
+
+footer {
+    display: flex;
+    flex: 1fr 1fr 1em;
+    align-items: center;
+    margin: 1em;
+    border: 8px rgb(231, 10, 10) solid;
+    background-color: rgb(245, 148, 148);
+}
+footer ul {
+    margin: 1em;
+    list-style-type:none;
+    
+}
+footer ul li {
+    margin: 1em;
+    padding: 2px;
+}
+
+.last-modded {
+    margin: 1em;
+}
+
+/*-- Fresh Page --*/
+
+
+fieldset {
+    border: yellowgreen 2px solid;
+    
 }

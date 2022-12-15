@@ -2,6 +2,10 @@
 <html lang="en">
     <head>
         <title>Bountiful</title>
+        <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
         <link href="css/normalize.css" rel="stylesheet"/>
         <link href="css/small.css" rel="stylesheet"/>
         <link href="css/medium.css" rel="stylesheet"/>
@@ -14,14 +18,24 @@
         </header>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="fresh.html">Fresh</a></li>
-                <li><a href="about-us.html">About Us</a></li>
+                <li><a class="linky" href="index.html">Home</a></li>
+                <li><a class="linky" href="fresh.html">Fresh</a></li>
+                <li><a class="linky" href="about-us.html">About Us</a></li>
             </ul>
         </nav>
         <main class="home-index">
             <div class="business">
                 <h2>Business Information</h2>
+                <p>Phone number: 888-963-5478</p>
+                <p>Address: 54th Apple Street East</p>
+            </div>
+            <div class="fresh">
+                <h2>Make your own fruit drinks here!</h2>
+                <img src="images/fruit-drinks.jpg" alt="fruit drinks">
+                <p><a href="fresh.html">Drinks</a></p>
+            </div>
+            <div class="number">
+                <p><span id="ordernumber"></span></p>
             </div>
             <div class="summary">
                 <h2>Carlsbad</h2>
@@ -73,22 +87,15 @@
                 </div>
                   
             </div>
-            <div class="fresh">
-                <h2>Make your own fruit drinks here!</h2>
-                <img src="images/fruit-drinks.jpg" alt="fruit drinks">
-                <p><a href="fresh.html">Drinks</a></p>
-            </div>
-            <div class="number">
-                <p><span id="ordernumber"></span></p>
-            </div>
         </main>
         <footer>
+            <img class="logo" src="images/logo-bountiful-smallest.jpg" alt="bountiful logo">
             <ul>
                 <li><a href="https://www.facebook.com/"><img src=""></a> Facebook</li>
-                <li><a href="https://www.youtube.com/"></a> Youtube</li>
-                <li><a href="https://twitter.com/"></a> Twitter</li>
+                <li><a href="https://www.youtube.com/"><img src=""></a> Youtube</li>
+                <li><a href="https://twitter.com/"><img src=""></a> Twitter</li>
             </ul>
-            <span id="lastmodified"></span>
+            <span class="last-modded" id="lastmodified"></span>
         </footer>
         <script src="script/weather.js"></script>
         <script src="script/date-accesslocal.js"></script>
