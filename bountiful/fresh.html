@@ -20,14 +20,18 @@
       </ul>
     </nav>
     <main>
-        <head>
-            <h1>Order Fresh Drink</h1>
-        </head>
+      <head>
+        <h1>Order Fresh Drink</h1>
+      </head>
       <form method="get">
         <fieldset>
           <legend>Contact Info</legend>
           <label class="top"
-            >First Name*<input type="text" name="fname" id="first-name" required
+            >First Name*<input
+              type="text"
+              name="fname"
+              id="first-name"
+              required
           /></label>
           <label class="top"
             >Email*<input
@@ -47,38 +51,78 @@
           /></label>
         </fieldset>
         <fieldset>
-            <legend>Fruit mixer</legend>
-            <label class="bottom">
-                <select name="selection" id="fruit-one" required></select>
-            </label>
-            <label class="bottom">
-                <select name="selector" id="fruit-two" required></select>
-            </label>
-            <label class="bottom">
-                <select name="select" id="fruit-three" required></select>
-            </label>
+          <legend>Fruit mixer</legend>
+          <label class="bottom">
+            <select name="selection" id="fruit-one" required></select>
+          </label>
+          <label class="bottom">
+            <select name="selector" id="fruit-two" required></select>
+          </label>
+          <label class="bottom">
+            <select name="select" id="fruit-three" required></select>
+          </label>
         </fieldset>
         <fieldset>
           <legend>Special Instructions</legend>
           <label>
-            <textarea name="instructions" class="instruct" id="special-inst" placeholder="Use If you want the drinks made in a special way."></textarea>
+            <textarea
+              name="instructions"
+              class="instruct"
+              id="special-inst"
+              placeholder="Use If you want the drinks made in a special way."
+            ></textarea>
           </label>
         </fieldset>
         <fieldset>
-            <input type="submit" value="Order" id="orderbtn">
-            <input type="button" value="Clear" id="clearbtn">
+          <input type="submit" value="Order" id="orderbtn" />
+          <input type="button" value="Clear" id="clearbtn" />
         </fieldset>
       </form>
       <div id="orderinfo-one" class="frooty-fruit"></div>
     </main>
     <footer>
-      <img class="logo" src="images/logo-bountiful-smallest.jpg" alt="bountiful logo">
       <ul class="linky">
-        <li><a href="https://www.facebook.com/"><img src="images/facebook-logo.jpg" alt="facebook-logo" width="40" height="40">Facebook</a></li>
-        <li><a href="https://www.youtube.com/"><img src="images/youtube-logo.png" alt="youtube-logo" width="40" height="40">Youtube</a></li>
-        <li><a href="https://twitter.com/"><img src="images/twitter-logo.jpg" alt="twitter-logo" width="40" height="40">Twitter</a></li>
-    </ul>
+        <li>
+          <a href="https://www.facebook.com/"
+            ><img
+              src="images/facebook-logo.jpg"
+              alt="facebook-logo"
+              loading="lazy"
+              width="40"
+              height="40"
+            />Facebook</a
+          >
+        </li>
+        <li>
+          <a href="https://www.youtube.com/"
+            ><img
+              src="images/youtube-logo.png"
+              alt="youtube-logo"
+              loading="lazy"
+              width="40"
+              height="40"
+            />Youtube</a
+          >
+        </li>
+        <li>
+          <a href="https://twitter.com/"
+            ><img
+              src="images/twitter-logo.jpg"
+              alt="twitter-logo"
+              loading="lazy"
+              width="40"
+              height="40"
+            />Twitter</a
+          >
+        </li>
+      </ul>
       <div id="lastmodified"></div>
+      <img
+        class="logo"
+        src="images/logo-bountiful-smallest.jpg"
+        alt="bountiful logo"
+        loading="lazy"
+      />
     </footer>
     <script src="script/last-modified.js"></script>
     <script src="script/json-get.js"></script>
