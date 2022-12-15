@@ -98,7 +98,7 @@ function displayOrder(data, index1, index2, index3, fname, emailg, cell) {
     let theDate = window.localStorage.getItem("date-time");
     const specinstructions = document.getElementById("special-inst");
 
-    instructions.textContent = specinstructions.value;
+  instructions.textContent = `Special Instructions: ${specinstructions.value}`;
   name.textContent = fname;
   email.textContent = emailg;
   phone.textContent = cell;
